@@ -1,14 +1,15 @@
 // CONTAINER 
-$container-width: 1240px;
+$container-width: 1300px;
 $max-xs: 576px;
 $max-sm: 768px;
 $max-md: 992px;
-$max-lg: 1200px;
+$max-lg: 1240px;
 
 // COLORS
-$color-b00000: #b00000;
+$color-green: #6a983c;
 $bg-color: #fff;
+$color-151515: #151515;
 
 // FONTS
-$font-body:'sans', sans-serif;
-$font-inter:'inter', sans-serif;
+$font-poppins: "Poppins", sans-serif;
+$font-open-sans:'Open-sans', sans-serif;

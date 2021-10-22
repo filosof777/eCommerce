@@ -1,0 +1,8 @@
+.text-effect {
+  transition: color 0.4s ease;
+  color: $color-green;
+
+  &:hover {
+    color: #6A983c;
+  }
+}

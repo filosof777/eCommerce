@@ -16,38 +16,51 @@
   }
 }
 
-@mixin before-after ($bg-repeat: no-repeat, 
-                     $bg-size: contain,
-                     $inline-block: inline-block, 
-                     $widths: 300px, 
-                     $heights: 100px 
-                     ) {
+@mixin before-after ($widths: 0, $heights: 0) {
   content: "";
-  background-repeat: $bg-repeat;
-  background-size: $bg-size;
-  display: $inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
   width: $widths;
   height: $heights;
 }
 
-@mixin font-body ($ft-family: $font-body,
-                  $ft-weight: 400,
-                  $ft-size: 16px,
-                  $ft-color: #000) {
+@mixin pozition-absolute {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@mixin font-poppins ($ft-weight: 400,
+                     $ft-size: 16px,
+                     $line-height: 16px,
+                     $ft-color: #000) {
   
-  font-family: $ft-family;
+  font-family: $font-poppins;
   font-weight: $ft-weight;
   font-size: $ft-size;
+  line-height: $line-height;
   color: $ft-color;
 }
 
-@mixin font-inter ($ft-family: $font-inter,
-              $ft-weight: 400,
-              $ft-size: 16px,
-              $ft-color: #000) {
+@mixin font-open ($ft-weight: 400,
+                  $ft-size: 16px,
+                  $line-height: 16px,
+                  $ft-color: #000) {
   
-  font-family: $ft-family;
+  font-family: $font-open-sans;
   font-weight: $ft-weight;
   font-size: $ft-size;
+  line-height: $line-height;
   color: $ft-color;
+}
+
+@mixin button ($border-radius: 0,
+               $border: 0 solid transparent,
+               $btn-bg-color: transparent,
+               $display: inline-block) {
+  
+  border-radius: $border-radius;
+  border: $border;
+  background-color: $btn-bg-color;
+  display: $display;
 }
