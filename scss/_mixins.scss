@@ -54,11 +54,12 @@
   color: $ft-color;
 }
 
-@mixin button ($border-radius: 0,
+@mixin button ($padding: 0 0,
+               $border-radius: 0,
                $border: 0 solid transparent,
                $btn-bg-color: transparent,
                $display: inline-block) {
-  
+  padding: $padding;
   border-radius: $border-radius;
   border: $border;
   background-color: $btn-bg-color;

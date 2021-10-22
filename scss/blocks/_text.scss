@@ -1,0 +1,80 @@
+// title
+
+.title {
+  @include font-poppins(600, 32px, 48px, $color-151515);
+}
+
+.big-title {
+  @include font-poppins(600, 22px, 33px, $color-151515);
+}
+
+.sub-title {
+  @include font-poppins(900, 18px, 27px, $color-151515);
+}
+
+.small-title {
+  @include font-poppins(600, 15px, 22px, $color-151515);
+}
+
+.white-title {
+  @include font-poppins(600, 22px, 33px, #fff);
+}
+
+// text
+
+.text {
+  @include font-poppins(500, 15px, 22px, $color-151515);
+}
+
+.green-text {
+  @include font-poppins(600, 12px, 18px, $color-green);
+}
+
+.opacity-text {
+  @include font-open(normal, 12px, 16px, #575757);
+}
+
+.data-text {
+  @include font-open(normal, 12px, 16px, $color-151515);
+}
+
+.white-text {
+  @include font-open(normal, 12px, 16px, #fff);
+}
+
+.sallary-text {
+  @include font-poppins(600, 18px, 27px, $color-151515);
+}
+
+.line-text {
+  @include font-poppins(600, 12px, 18px, #a9a9a9);
+  text-decoration-line: line-through;
+}
+
+.text-effect {
+  transition: color 0.4s ease;
+  color: $color-green;
+
+  &:hover {
+    color: #6A983c;
+  }
+}
+
+// link
+
+.swipe-link {
+  @include font-poppins(600, 15px, 22px, $color-151515);
+  display: flex;
+  align-items: center;
+  
+  &::after {
+    @include before-after(16px, 16px);
+    margin-left: 6px;
+    background-image: url("../../media/img/icons/green-arrow.svg");
+  }
+}
+
+.green-link {
+  @include font-open(normal, 14px, 19px, $color-green);
+  text-decoration-line: underline;
+}

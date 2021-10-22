@@ -1,0 +1,20 @@
+.nav {
+
+  &__sub-title {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    margin-bottom: 48px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+@include breakpoint-down($max-md) {
+  .nav__btn {
+    margin-bottom: 20px;
+  }
+}

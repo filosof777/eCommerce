@@ -1,5 +1,39 @@
 .header {
   padding: 40px 0;
+
+  &__list {
+    position: relative;
+  }
+
+  &__item:nth-child(1) {
+    margin-right: 40px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__num {
+    @include font-poppins(700, 18px, 0, #fff);
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #e5704b;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.329);
+  }
 }
 
 .logo__img {
@@ -25,81 +59,47 @@
     @include pozition-absolute
   }
 
-		&__select {
-      @include font-poppins(900, 15px, 0 $color-151515);
-      max-width: 145px;
-      border: none;
-      background-color: transparent;
-      outline-color: $color-green;
+  &__select {
+    @include font-poppins(900, 15px, 0 $color-151515);
+    max-width: 145px;
+    border: none;
+    background-color: transparent;
+    outline-color: $color-green;
+  }
+
+  &__input {
+    @include font-open(normal, 14px, 0, $color-151515);
+    width: 262px;
+    border: none;
+    background-color: transparent;
+    outline-color: $color-green;
+    position: relative;
+    padding: 5px;
+    margin-left: 50px;
+    position: relative;
+
+    &::placeholder {
+      @include font-open(normal, 14px, 19px, #a9a9a9);
     }
+  }
 
-    &__input {
-      @include font-open(normal, 14px, 0, $color-151515);
-      width: 262px;
-      border: none;
-      background-color: transparent;
-      outline-color: $color-green;
-      position: relative;
-      padding: 5px;
-      margin-left: 50px;
-      position: relative;
+  &__submit-btn {
+    @include pozition-absolute;
+    top: 50%;
+    right: 12px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+  }
 
-      &::placeholder {
-        @include font-open(normal, 14px, 19px, #a9a9a9);
-      }
-    }
-      
-		&__submit-btn {
-      @include pozition-absolute;
-      top: 50%;
-      right: 12px;
-      border: none;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      background-color: transparent;
-		}
-
-    &__submit-img {
-      width: 16px;
-      height: 16px;
-      background-size: contain;
-      background-position: center;
-    }
-
-		&__list {
-      position: relative;
-		}
-
-		&__item:nth-child(1) {
-      margin-right: 40px;
-    }
-
-		&__btn {
-      border: none;
-      background-color: transparent;
-		}
-
-		&__img {
-      width: 24px;
-      height: 24px;
-		}
-
-		&__num {
-      @include font-poppins(700, 18px, 0, #fff);
-      position: absolute;
-      bottom: -5px;
-      right: 10px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      text-align: center;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      background-color: #e5704b;
-      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.329);
-		}
+  &__submit-img {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 // media
@@ -107,7 +107,7 @@
 @include breakpoint-down(826px) {
   .header {
     padding: 20px 0;
-    
+
     &__search {
       position: absolute;
       top: 94px;
@@ -118,11 +118,11 @@
 
 @include breakpoint-down(540px) {
   .search {
-    
+
     &::before {
       display: none;
     }
-    
+
     &__select {
       display: none;
     }
