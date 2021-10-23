@@ -1,0 +1,107 @@
+.customers {
+  padding: 64px 0;
+
+  &__slide {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    position: relative;
+  }
+
+  &__item {
+    width: 24%;
+    padding: 24px 32px 40px 32px;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    position: relative;
+
+    &::after {
+      @include before-after(48px, 48px);
+      @include pozition-absolute;
+      left: 50%;
+      bottom: -48px;
+    }
+    
+    &:nth-child(1)::after {
+      background-image: url("../../../media/img/img/customer-1.png");
+    }
+    
+    &:nth-child(2)::after {
+      background-image: url("../../../media/img/img/customer-2.png");
+    }
+    
+    &:nth-child(3)::after {
+      background-image: url("../../../media/img/img/customer-1.png");
+    }
+    
+    &:nth-child(4)::after {
+      background-image: url("../../../media/img/img/customer-2.png");
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 0 12px 12px 0;
+    background-image: url("../../../media/img/icons/white-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 48px;
+    background-color: $color-151515;
+  }
+
+  &__right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 12px 0 0 12px;
+    background-image: url("../../../media/img/icons/white-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 48px;
+    background-color: $color-151515;
+  }
+}
+
+@include breakpoint-down($max-md) {
+  .customers__item {
+    width: 31%;
+
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint-down($max-sm) {
+  .customers__item {
+    width: 48%;
+
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint-down($max-xs) {
+  .customers__item {
+    width: 100%;
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.headline {
+  padding: 64px 0;
+
+  &__slide {
+    margin-bottom: 32px;
+  }
+}
+
+@include breakpoint-down($max-md) {
+  .product__item {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

@@ -1,5 +1,11 @@
 .product {
 
+  &__item {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+  }
+
   &__inner {
     width: calc(100% - 16px);
     padding: 16px;
@@ -47,6 +53,10 @@
     background-image: url("../../../media/img/img/porduct-3.png");
   }
 
+  &__item:nth-child(4) .product__img {
+    background-image: url("../../../media/img/img/porduct-4.png");
+  }
+
   &__small-title {
     margin-bottom: 4px;
   }
@@ -57,6 +67,15 @@
 }
 
 // media 
+
+@include breakpoint-down($max-md) {
+  .product {
+
+    &__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
 
 @include breakpoint-down($max-xs) {
   .product {

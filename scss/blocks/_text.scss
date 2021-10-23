@@ -9,7 +9,11 @@
 }
 
 .sub-title {
-  @include font-poppins(900, 18px, 27px, $color-151515);
+  @include font-poppins(700, 18px, 27px, $color-151515);
+}
+
+.subs-title {
+  @include font-poppins(600, 18px, 27px, $color-151515);
 }
 
 .small-title {
@@ -46,6 +50,10 @@
   @include font-poppins(600, 18px, 27px, $color-151515);
 }
 
+.description-text {
+  @include font-poppins(600, 12px, 18px, #a9a9a9);
+}
+
 .line-text {
   @include font-poppins(600, 12px, 18px, #a9a9a9);
   text-decoration-line: line-through;
@@ -72,6 +80,18 @@
     margin-left: 6px;
     background-image: url("../../media/img/icons/green-arrow.svg");
   }
+}
+
+.text-link {
+  @include font-poppins(600, 12px, 18px, $color-green);
+  background-color: rgb(235, 235, 235);
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+  border-radius: 15px;
+
 }
 
 .green-link {

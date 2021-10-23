@@ -25,6 +25,14 @@
   height: $heights;
 }
 
+@mixin background-image ($widths: 0, $heights: 0) {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: $widths;
+  height: $heights;
+}
+
 @mixin pozition-absolute {
   position: absolute;
   transform: translate(-50%, -50%);
