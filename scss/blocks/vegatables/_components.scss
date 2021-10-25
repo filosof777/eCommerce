@@ -1,0 +1,170 @@
+.components {
+  padding: 16px 0;
+
+  &__very-opacity-text {
+    margin-bottom: 16px;
+  }
+
+  &__blog {
+    margin-bottom: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &:not(:last-child):before {
+      @include before-after(16px, 16px);
+    }
+
+    &:nth-child(1)::before {
+      background-image: url("../../../media/img/icons/grid-icon.svg");
+      margin-right: 4px;
+    }
+
+    &:nth-child(2)::before {
+      padding-left: 20px;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../../../media/img/icons/list-icon.png");
+      margin-right: 4px;
+    }
+
+    &:nth-child(3)::before {
+      content: "117";
+      background-color: #F4F8EC;
+      @include font-poppins(600, 12px, 18px, $color-green);
+      border-radius: 10px;
+      padding: 2px 8px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-right: 4px;
+    }
+  }
+  
+  &__des {
+    margin-bottom: 16px;
+  }
+  
+  &__description-text {
+    margin-right: 12px;
+  }
+
+  &__btn-selected {
+    margin-right: 12px;
+  }
+}
+
+.checking {
+  margin-bottom: 16px;
+
+  &__item {
+    padding: 9px 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__radio {
+    width: 24px;
+    height: 24px; 
+    margin-right: 10px;   
+  }
+
+  &__label {
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #151515;
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__check {
+    display: flex;
+    align-items: center;
+    
+    &::after {
+      content: "Nbm";
+      padding: 0 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+      border: 1px solid #d1d1d1;
+      font-family: $font-poppins;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      color: #151515;
+    }
+  }
+
+  &__select {
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #151515;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.components {
+
+  &__very-opacity-text {}
+
+  &__blog {}
+
+
+
+  &__data-text {}
+}

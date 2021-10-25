@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,WAAW,AAAC,CACV,OAAO,CAAE,MAAM,CAiChB,AA/BE,AAAD,8BAAoB,AAAC,CACnB,aAAa,CAAE,IAAI,CACpB,AAEA,AAAD,iBAAO,AAAC,CACN,aAAa,CAAE,GAAG,CACnB",
+    "sources": [
+        "../scss/blocks/vegatables/blocks.scss",
+        "../scss/blocks/vegatables/_components.scss"
+    ],
+    "names": [],
+    "file": "blocks.min.css"
+}
