@@ -1,0 +1,199 @@
+.sale {
+  padding-bottom: 64px;
+
+  &__subs-title {
+    margin-bottom: 16px;
+  }
+
+  &__category {
+    margin-bottom: 12px;
+
+    &:nth-child(5) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__checking {
+    margin-bottom: 12px;
+
+    &:nth-child(11) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+  &__label {
+    align-items: center;
+    padding-bottom: 4px;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__range {
+    width: 80%;
+    height: 6px;
+    background-color: #ebebeb;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__range-line {
+    background-color: $color-green;
+    width: 50px;
+    height: 6px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 60px;
+
+    &::before {
+      @include before-after(20px, 20px);
+      @include pozition-absolute;
+      border-radius: 50%;
+      border: 2px solid #ebebeb;
+      top: 50%;
+      left: -10px;
+      background-color: #fff;
+    }
+
+    &::after {
+      @include before-after(20px, 20px);
+      @include pozition-absolute;
+      border-radius: 50%;
+      border: 2px solid #ebebeb;
+      top: 50%;
+      right: -20px;
+      background-color: #fff;
+    }
+  }
+
+  &__range-label {
+    @include font-poppins(600, 12px, 18px, $color-151515);
+  }
+
+  &__input-row {
+    margin-bottom: 16px;
+  }
+
+  &__range-input {
+    width: 130px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 11px 16px;
+  }
+
+  &__btn-reset {
+    @include font-poppins(bold, 15px, 22px, #a9a9a9);
+    padding: 13px 16px;
+    margin-left: 34px;
+  }
+
+  &__page {
+    padding: 16px 0;
+  }
+}
+
+.sale-card {
+
+  &__item {
+    margin-left: 32px;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+    width: 270px;
+    height: 280px;
+    background-size: contain;
+  }
+}
+
+.sale-card-inner {
+  margin-left: 32px;
+
+  &__subs-title {
+    margin-bottom: 4px;
+  }
+
+  &__opacity-text {
+    margin-bottom: 8px;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__fresh-text {
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    margin-left: 100px;
+  }
+
+  &__line-text {
+    margin-bottom: 16px;
+  }
+
+  &__description-text {
+    margin-bottom: 26px;
+  }
+
+  &__btn-green-after {
+    margin-bottom: 12px;
+  }
+
+  &__btn-heart {
+  }
+}
+
+
+@include breakpoint-down($max-md) {
+  .sale {
+
+    &__btn-green {
+      margin-bottom: 16px;
+    }
+
+    &-card__img {
+      width: 100%;
+    }
+
+    &-card__item {
+      margin-left: 0;
+    }
+
+    &-card-inner {
+      margin-top: 16px;
+    }
+
+    &-card-inner__price {
+      margin-left: 32px;
+    }
+  }
+}
+
+@include breakpoint-down($max-xs) {
+
+  .sale-card-inner__price {
+    margin-left: 0;
+  }
+}

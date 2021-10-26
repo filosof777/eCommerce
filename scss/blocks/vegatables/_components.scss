@@ -126,45 +126,10 @@
     font-size: 12px;
     line-height: 18px;
     color: #151515;
+    padding: 8px 16px;
   }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.components {
-
-  &__very-opacity-text {}
-
-  &__blog {}
-
-
-
-  &__data-text {}
+  &__option {
+    padding: 20px;
+  }
 }
