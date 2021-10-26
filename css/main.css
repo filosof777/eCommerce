@@ -2110,6 +2110,10 @@ img {
   padding: 16px 0;
 }
 
+.site__list {
+  margin-bottom: 20px;
+}
+
 .sale-card__item {
   margin-left: 32px;
   border: 1px solid #d1d1d1;
