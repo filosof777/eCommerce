@@ -24,10 +24,18 @@
   @include font-poppins(600, 22px, 33px, #fff);
 }
 
+.procent-title {
+  @include font-poppins(600, 32px, 140%, $color-151515);
+}
+
 // text
 
 .text {
   @include font-poppins(500, 15px, 22px, $color-151515);
+}
+
+.paragraph-text {
+  @include font-poppins(normal, 17px, 23px, $color-151515);
 }
 
 .green-text {
@@ -75,6 +83,10 @@
   text-decoration-line: line-through;
 }
 
+.green-price-text {
+  @include font-poppins(600, 26px, 39px, $color-green);
+}
+
 .text-effect {
   transition: color 0.4s ease;
   color: $color-green;
@@ -112,5 +124,10 @@
 
 .green-link {
   @include font-open(normal, 14px, 19px, $color-green);
+  text-decoration-line: underline;
+}
+
+.black-link {
+  @include font-open(normal, 14px, 19px, $color-151515);
   text-decoration-line: underline;
 }

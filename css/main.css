@@ -779,11 +779,27 @@ img {
   color: #fff;
 }
 
+.procent-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: #151515;
+}
+
 .text {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
+  color: #151515;
+}
+
+.paragraph-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
   color: #151515;
 }
 
@@ -877,6 +893,14 @@ img {
           text-decoration-line: line-through;
 }
 
+.green-price-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #6a983c;
+}
+
 .text-effect {
   -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
@@ -939,6 +963,16 @@ img {
   font-size: 14px;
   line-height: 19px;
   color: #6a983c;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.black-link {
+  font-family: "Open-sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
@@ -2188,5 +2222,156 @@ img {
   .sale-card-inner__price {
     margin-left: 0;
   }
+}
+
+.detail {
+  padding: 64px 0;
+}
+
+.detail__procent-title {
+  margin-bottom: 8px;
+}
+
+.detail__paragraph-text {
+  margin-bottom: 40px;
+}
+
+.detail__fresh-text {
+  margin-bottom: 12px;
+}
+
+.detail__text {
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.detail__category-text {
+  margin-bottom: 12px;
+}
+
+.detail__black-link {
+  margin-bottom: 12px;
+}
+
+.detail__green-link {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.detail__pozition {
+  margin: 40px 0 24px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.detail__select {
+  border: none;
+  padding: 15px 12px;
+  margin-left: 90px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.detail__btn-green {
+  margin-left: 90px;
+}
+
+.detail__small-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 62px;
+}
+
+.detail__small-title:not(:last-child) {
+  margin-right: 16px;
+}
+
+.detail__small-title:nth-child(1)::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url("../../../media/img/icons/red-health.svg");
+  background-position: center;
+}
+
+.detail__small-title:nth-child(2)::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url("../../../media/img/icons/red-list.svg");
+  background-position: center;
+}
+
+.detail__subs {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+}
+
+.detail__subs::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 33%;
+  height: 1px;
+  background-color: #6a983c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.detail__subs-title {
+  margin-right: 70px;
+}
+
+.detail__subs-title:not(:first-child)::after {
+  content: "18";
+  padding: 0 8px;
+  background-color: #f4f8ec;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 12px;
+  color: #6a983c;
+}
+
+.detail-img__item {
+  background-image: url("../../../media/img/img/product-bg.png");
+  width: 100%;
+  height: 435px;
+  background-size: cover;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+}
+
+.detail-img__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.detail-star__list {
+  margin-bottom: 40px;
+}
+
+.table__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
