@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce</title>
+  <link rel="stylesheet" href="css/flexbox-grid.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+  <!-- header top -->
+
+  <div class="header-top top">
+    <div class="top__container container">
+      <div class="top__row row row-mrg between-xs middle-xs">
+        <div class="top__contact contact">
+          <ul class="contact__list row row-mrg">
+            <li class="contact__item"><a class="text-effect contact__link t" href="#">Chat with us</a></li>
+            <li class="contact__item"><a class="contact__link" href="tel:+420336775664">+420 336 775 664</a></li>
+            <li class="contact__item"><a class="contact__link"
+                href="https://olimjonkamalov@mail.ru">info@freshnesecom.com</a></li>
+          </ul>
+        </div>
+        <div class="top__info info">
+          <ul class="info__list row row-mrg">
+            <li class="info__item"><a class="info__link text-effect" href="#">Blog</a></li>
+            <li class="info__item"><a class="info__link text-effect" href="#">About Us</a></li>
+            <li class="info__item"><a class="info__link text-effect" href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+
+  <header class="site-header header">
+    <div class="header__container container">
+      <div class="header__row row row-mrg between-xs middle-xs">
+        <a class="header__logo logo" href="index.html">
+          <img class="logo__img" src="media/img/logo/logo.svg" alt="logo">
+        </a>
+        <div class="header__search search row row-mrg middle-xs">
+          <form class="search__form" action="https://echhtmlacademy.com" method="get">
+            <select class="search__select" name="caregories" id="caregories">
+              <option class="search__option" value="categories" for="caregories" selected>All categories</option>
+              <option class="search__option" value="categories" for="caregories">Bakery</option>
+              <option class="search__option" value="categories" for="caregories">Fruit and vegetables</option>
+              <option class="search__option" value="categories" for="caregories">Meat and fish</option>
+              <option class="search__option" value="categories" for="caregories">Drinks</option>
+              <option class="search__option" value="categories" for="caregories">Kitchen</option>
+            </select>
+            <input class="search__input" type="text" placeholder="Search Products, categories ...">
+            <button class="search__submit-btn"><img class="search__submit-img" src="media/img/icons/search.svg"
+                alt="search"></button>
+          </form>
+        </div>
+        <ul class="header__list row row-mrg">
+          <li class="header__item"><button class="header__btn"><img class="header__img" src="media/img/icons/user.svg"
+                alt="user"></button></li>
+          <li class="header__item"><button class="header__btn"><img class="header__img" src="media/img/icons/basket.svg"
+                alt="basket"></button></li>
+          <span class="header__num">4</span>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- header bottom -->
+
+  <div class="header-bottom bottom">
+    <div class="bottom__container container">
+      <ul class="bottom__list row row-mrg between-xs middle-xs">
+        <li class="bottom__item"><a class="bottom__link" href="index.html">Bacery</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="vegetables.html">Bruit and vegetables</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="grid-page.html">Meat and fish</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="detail.html">Drinks</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="info.html">Kitchen</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="#">Special nutrition</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="#">Baby</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item"><a class="bottom__link" href="#">Pharmacy</a>
+          <div class="bottom__dropdown dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">About</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Service</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Contact Me</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Products</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- info page -->
+
+  <main class="site-info info">
+    <div class="info__container container">
+      <div class="info__row row row-mrg">
+        <div class="info__col col-pdg col-xs-12 col-md-7">
+          <form action="https://echohtmlacademy.com" method="get">
+            <h2 class="info__big-title big-title">Billing info</h2>
+            <div class="info__row row row-mrg between-xs">
+              <p class="info__very-opacity-text very-opacity-text">Please enter your billing info</p>
+              <p class="info__very-opacity-text very-opacity-text">Step 1 of 5</p>
+            </div>
+            <div class="info__row row row-mrg between-xs">
+              <div class="info__form-left">
+                <label class="info__label" for="fname">First name</label>
+                <input class="info__input" type="text" id="fname" name="fname" placeholder="First name">
+                <label class="info__label" for="lname">Last name</label>
+                <input class="info__input" type="text" id="lname" name="lname" placeholder="Last name">
+                <label class="info__label" for="email">Email address</label>
+                <input class="info__input" type="email" id="emaik" name="email" placeholder="Email address">
+                <label class="info__label" for="pnumber">Last name</label>
+                <input class="info__input" type="text" id="pnumber" name="pnumber" placeholder="Phone number">
+                <div class="info__check row row-mrg middle-xs">
+                  <input class="info__checkbox" type="checkbox">
+                  <p class="info__category-text category-text">Ship to a different address?</p>
+                </div>
+              </div>
+              <div class="info__form-right">
+                <label class="info__label" for="address">Address</label>
+                <input class="info__input" type="text" id="address" name="address" placeholder="Address">
+                <label class="info__label" for="city">Town / City</label>
+                <input class="info__input" type="text" id="city" name="city" placeholder="Town or city">
+                <label class="info__label" for="country">State / Country</label>
+                <input class="info__input" type="text" id="country" name="country"
+                  placeholder="Choose a state or Country">
+                <label class="info__label" for="code">ZIP/Postal code</label>
+                <input class="info__input" type="text" id="code" name="code" placeholder="Postal code or ZIP">
+              </div>
+              <h2 class="info__big-title big-title">Billing method</h2>
+              <div class="info__row row row-mrg between-xs">
+                <p class="info__very-opacity-text very-opacity-text">Please enter your billing info</p>
+                <p class="info__very-opacity-text very-opacity-text">Step 2 of 5</p>
+              </div>
+            </div>
+            <div class="info__check-box row row-mrg middle-xs">
+              <input class="info__radio-input" type="radio" id="fedex">
+              <label class="info__info-text info-text" for="fedex">FedEx</label>
+              <p class="info__green-text green-text">+32 USD</p>
+              <p class="info__info-text info-text">Additional price</p>
+              <img class="info__img" src="media/img/icons/fedex.svg" alt="fedex">
+            </div>
+            <div class="info__check-box row row-mrg middle-xs">
+              <input class="info__radio-input" type="radio" id="dhl">
+              <label class="info__info-text info-text" for="dhl">DHL</label>
+              <p class="info__green-text green-text">+15 USD</p>
+              <p class="info__info-text info-text">Additional price</p>
+              <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
+            </div>
+            <h2 class="info__big-title big-title">Payment method</h2>
+            <div class="info__row row row-mrg between-xs">
+              <p class="info__very-opacity-text very-opacity-text">Please enter your billing info</p>
+              <p class="info__very-opacity-text very-opacity-text">Step 3 of 5</p>
+            </div>
+            <div class="info__card">
+              <div class="info__card-inner row row-mrg middle-xs">
+                <input class="info__radio-input" type="radio" id="dhl">
+                <label class="info__info-text info-text" for="dhl">DHL</label>
+                <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
+              </div>
+              <label class="info__info-text info-text" for="cnumber">Card number</label>
+              <input class="info__input-number-big" type="text" id="cnumber" placeholder="Card number">
+              <div class="info__row row row-mrg add between-xs">
+                <div class="col">
+                  <label class="info__info-text info-text" for="cholder">Card number</label>
+                  <input class="info__input-number-first" type="text" id="cholder" placeholder="Card holder">
+                </div>
+                <div class="info__input-second">
+                  <label class="info__info-text info-text" for="data">Card number</label>
+                  <input class="info__input-number-second" type="text" id="data" placeholder="DD/MM/YY">
+                </div>
+                <div class="info__input-third">
+                  <label class="info__info-text info-text" for="cvc">Card number</label>
+                  <input class="info__input-number-three" type="text" id="cvc" placeholder="CVC">
+                </div>
+              </div>
+            </div>
+            <div class="info__check-box row row-mrg middle-xs">
+              <input class="info__radio-input" type="radio" id="fedex">
+              <label class="info__info-text info-text" for="fedex">FedEx</label>
+              <img class="info__img" src="media/img/icons/fedex.svg" alt="fedex">
+            </div>
+            <div class="info__check-box row row-mrg middle-xs">
+              <input class="info__radio-input" type="radio" id="dhl">
+              <label class="info__info-text info-text" for="dhl">DHL</label>
+              <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
+            </div>
+            <h2 class="info__big-title big-title">Additional informations</h2>
+            <div class="info__row row row-mrg between-xs">
+              <p class="info__very-opacity-text very-opacity-text">Need something else? We will make it for you!</p>
+              <p class="info__very-opacity-text very-opacity-text">Step 4 of 5</p>
+            </div>
+            <div class="info__input-third">
+              <label class="info__info-text info-text" for="cvc">Order notes</label>
+              <textarea class="info__input-textarea" name="textatea" id="cvc" cols="30" rows="10"
+                placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+            </div>
+            <h2 class="info__big-title big-title">Confirmation</h2>
+            <div class="info__row row row-mrg between-xs">
+              <p class="info__very-opacity-text very-opacity-text">We are getting to the end. Just few clicks and your
+                order si ready!</p>
+              <p class="info__very-opacity-text very-opacity-text">Step 5 of 5</p>
+            </div>
+            <div class="info__check checkings row row-mrg middle-xs">
+              <input class="info__checkbox" type="checkbox">
+              <p class="info__category-text category-text">I agree with sending an Marketing and newsletter emails. No
+                spam, promissed!</p>
+            </div>
+            <div class="info__check checkings row row-mrg middle-xs">
+              <input class="info__checkbox" type="checkbox">
+              <p class="info__category-text category-text">I agree with our terms and conditions and privacy policy.</p>
+            </div>
+            <button class="info__green-btn btn-green">Complete order</button>
+            <p class="info__before-text info-text">All your data are safe</p>
+            <p class="info__opacity-text very-opacity-text">We are using the most advanced security to provide you the
+              best experience ever.</p>
+          </form>
+        </div>
+        <div class="info__col sums col-pdg col-xs-12 col-md-5">
+          <div class="summ">
+            <h2 class="summ__big-title big-title">Order Summary</h2>
+            <p class="summ__very-opacity-text very-opacity-text">Price can change depending on shipping method and taxes
+              of your state.</p>
+            <div class="summ__box">
+              <div class="summ__row row row-mrg">
+
+
+                <div class="summ__card">
+                  <img class="summ__img" src="media/img/img/porduct-1.png" alt="porduct-1" width="100px" height="67">
+                  <ul class="summ__list">
+                    <li class="summ__item">
+                      <p class="summ__text very-opacity-text">Wishlist</p>
+                    </li>
+                    <li class="summ__item">
+                      <p class="summ__text very-opacity-text">Compare</p>
+                    </li>
+                    <li class="summ__item">
+                      <p class="summ__text very-opacity-text">Remove</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="summ__des">
+                  <h3 class="summ__small-title small-title">Product title</h3>
+                  <p class="summ__text very-opacity-text">Farm:</p>
+                  <p class="summ__text very-opacity-text">Freshness:</p>
+                  <ul class="sale__list-star row row-mrg">
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                  </ul>
+                  <div class="detail__inner">
+                    <p class="detail__green-price-text green-price-text">36.23 USD</p>
+                    <p class="detail__line-text line-text">48.56 USD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="summ__box">
+              <div class="summ__row row row-mrg">
+
+
+                <div class="summ__card">
+                  <img class="summ__img" src="media/img/img/porduct-1.png" alt="porduct-1" width="100px" height="67">
+                  <ul class="summ__list">
+                    <li class="summ__item">
+                      <p class="summ__text very-opacity-text">Wishlist</p>
+                    </li>
+                    <li class="summ__item">
+                      <p class="summ__text very-opacity-text">Compare</p>
+                    </li>
+                    <li class="summ__item">
+                      <p class="summ__text very-opacity-text">Remove</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="summ__des">
+                  <h3 class="summ__small-title small-title">Product title</h3>
+                  <p class="summ__text very-opacity-text">Farm:</p>
+                  <p class="summ__text very-opacity-text">Freshness:</p>
+                  <ul class="sale__list-star row row-mrg">
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                    <li class="sale__item-star">
+                      <img class="sale__icon" src="media/img/icons/star-icon.svg" alt="star-icon">
+                    </li>
+                  </ul>
+                  <div class="detail__inner">
+                    <p class="detail__green-price-text green-price-text">36.23 USD</p>
+                    <p class="detail__line-text line-text">48.56 USD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

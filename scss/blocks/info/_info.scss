@@ -1,0 +1,205 @@
+.info {
+  padding: 64px 0;
+
+  &__big-title {
+    margin-bottom: 4px;
+  }
+
+  &__very-opacity-text {
+    margin-bottom: 32px;
+  }
+
+  &__label {
+    font-family: $font-poppins;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-151515;
+  }
+
+  &__input {
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    width: 330px;
+    padding: 12px 16px;
+    margin-bottom: 32px;
+  }
+
+  &__check {
+    padding: 12px 16px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    min-width: 250px;
+    margin-bottom: 64px;
+  } 
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  &__check-box {
+    width: 100% !important;
+    padding: 12px 16px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    margin-bottom: 32px;
+  }
+
+  &__radio-input {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  &__info-text {
+    margin-right: 110px;
+  }
+
+  &__green-text {
+    margin-right: 8px;
+  }
+
+  &__img {
+    margin-left: auto;
+  }
+
+  &__card {
+    padding: 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    margin-bottom: 32px;
+  }
+
+  &__card-inner {
+    margin-bottom: 32px;
+  }
+
+  &__radio-input {
+  }
+
+  &__info-text {
+    display: block;
+  }
+
+  &__input-number-big,
+  &__input-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    margin-bottom: 32px;
+  }
+
+  &__input-number-first {
+    padding: 12px 16px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+  }
+
+  &__input-number-second,
+  &__input-number-three {
+    padding: 12px 16px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+  }
+
+  &__green-btn {
+    margin-bottom: 32px;
+  }
+
+  &__before-text::before {
+    content: "";
+    background-image: url("../../../media/img/icons/check.svg");
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+  }
+
+  &__before-text {
+    margin-bottom: 8px;
+  }
+
+  &__opacity-text {
+    width: 210px;
+  }
+}
+
+.checkings {
+  margin-bottom: 32px;
+}
+
+.sums {
+  padding-left: 32px;
+}
+
+.summ {
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  padding: 32px 16px;
+
+  &__big-title {
+    margin-bottom: 4px;
+  }
+
+  &__very-opacity-text {
+    margin-bottom: 40px;
+  }
+
+  &__card {
+  }
+
+  &__img {
+    margin-bottom: 12px;
+    padding-right: 12px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 8px;
+    display: flex;
+
+    &::before {
+      @include before-after(12px, 12px);
+      background-position: center;
+      margin-right: 6px;
+    }
+
+    &:nth-child(1)::before {
+      background-image: url("../../../media/img/icons/health.svg");
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../../../media/img/icons/list.svg");
+    }
+
+    &:nth-child(3)::before {
+      background-image: url("../../../media/img/icons/remove.svg");
+    }
+  }
+
+  &__text {
+    margin-bottom: 8px;
+  }
+
+  &__des {
+  }
+
+  &__small-title {
+    margin-bottom: 4px;
+  }
+}
+

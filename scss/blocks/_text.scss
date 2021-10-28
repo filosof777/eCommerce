@@ -74,6 +74,10 @@
   @include font-poppins(600, 12px, 18px, #a9a9a9);
 }
 
+.info-text {
+  @include font-poppins(600, 12px, 18px, $color-151515);
+}
+
 .scobs-text {
   @include font-open(normal, 14px, 19px, $color-green);
 }

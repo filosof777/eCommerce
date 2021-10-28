@@ -126,25 +126,9 @@
 	margin-bottom: 40px;
 }
 
-.detail {
-
-	&__table {
-	}
+.table__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px 0;
 }
-.table {
 
-	&__list {
-		display: grid;
-		grid-template-columns: repeat(3, auto);
-		grid-gap: 10px 0;
-	}
-
-	&__item {
-	}
-
-	&__text {
-	}
-
-	&__pretext {
-	}
-}
