@@ -62,6 +62,11 @@
     margin-right: 16px;
   }
 }
+.blog__item2 {
+  background-size: 100%;
+  padding: 24px !important;
+}
+
 .blog-inner {
 
   &__item {
@@ -144,7 +149,10 @@
     &__white-title {
       width: 100%;
     }
-
+    .blog__item2 {
+      background-size: 100%;
+      padding: 24px !important;
+    }
     &__item {
 
       &:nth-child(2) {
@@ -175,4 +183,13 @@
       @include font-open(normal, 12px, 16px, $color-151515);
     }
   }
+}
+
+.blog__item2 {
+  padding: 24px 24px 24px 32px;
+  border-radius: 12px;
+  background-size: calc(100% - 32px) 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../media/img/img/product-bg.png");
 }

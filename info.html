@@ -25,11 +25,11 @@
                 href="https://olimjonkamalov@mail.ru">info@freshnesecom.com</a></li>
           </ul>
         </div>
-        <div class="top__info info">
-          <ul class="info__list row row-mrg">
-            <li class="info__item"><a class="info__link text-effect" href="#">Blog</a></li>
-            <li class="info__item"><a class="info__link text-effect" href="#">About Us</a></li>
-            <li class="info__item"><a class="info__link text-effect" href="#">Careers</a></li>
+        <div class="top__info infor">
+          <ul class="infor__list row row-mrg">
+            <li class="infor__item"><a class="infor__link text-effect" href="#">Blog</a></li>
+            <li class="infor__item"><a class="infor__link text-effect" href="#">About Us</a></li>
+            <li class="infor__item"><a class="infor__link text-effect" href="#">Careers</a></li>
           </ul>
         </div>
       </div>
@@ -130,7 +130,7 @@
             </ul>
           </div>
         </li>
-        <li class="bottom__item"><a class="bottom__link" href="#">Special nutrition</a>
+        <li class="bottom__item"><a class="bottom__link" href="blog1.html">Special nutrition</a>
           <div class="bottom__dropdown dropdown">
             <ul class="dropdown__list">
               <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
@@ -141,7 +141,7 @@
             </ul>
           </div>
         </li>
-        <li class="bottom__item"><a class="bottom__link" href="#">Baby</a>
+        <li class="bottom__item"><a class="bottom__link" href="blog2.html">Baby</a>
           <div class="bottom__dropdown dropdown">
             <ul class="dropdown__list">
               <li class="dropdown__item"><a class="dropdown__link" href="#">Home</a></li>
@@ -230,28 +230,76 @@
               <p class="info__very-opacity-text very-opacity-text">Please enter your billing info</p>
               <p class="info__very-opacity-text very-opacity-text">Step 3 of 5</p>
             </div>
-            <div class="info__card">
-              <div class="info__card-inner row row-mrg middle-xs">
-                <input class="info__radio-input" type="radio" id="dhl">
-                <label class="info__info-text info-text" for="dhl">DHL</label>
-                <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
-              </div>
-              <label class="info__info-text info-text" for="cnumber">Card number</label>
-              <input class="info__input-number-big" type="text" id="cnumber" placeholder="Card number">
-              <div class="info__row row row-mrg add between-xs">
-                <div class="col">
-                  <label class="info__info-text info-text" for="cholder">Card number</label>
-                  <input class="info__input-number-first" type="text" id="cholder" placeholder="Card holder">
+            <div>
+              <input class="info__radio-input" type="radio" id="master" name="payment">
+              <label class="info__card" for="master">
+                <div class="info__card-inner row row-mrg middle-xs">
+                  <div class="info__info-text info-text">DHL</div>
+                  <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
                 </div>
-                <div class="info__input-second">
-                  <label class="info__info-text info-text" for="data">Card number</label>
-                  <input class="info__input-number-second" type="text" id="data" placeholder="DD/MM/YY">
+                <label class="info__info-text info-text" for="cnumber">Card number</label>
+                <input class="info__input-number-big" type="text" id="cnumber" placeholder="Card number">
+                <div class="info__row row row-mrg add between-xs">
+                  <div class="col">
+                    <label class="info__info-text info-text" for="cholder">Card number</label>
+                    <input class="info__input-number-first" type="text" id="cholder" placeholder="Card holder">
+                  </div>
+                  <div class="info__input-second">
+                    <label class="info__info-text info-text" for="data">Card number</label>
+                    <input class="info__input-number-second" type="text" id="data" placeholder="DD/MM/YY">
+                  </div>
+                  <div class="info__input-third">
+                    <label class="info__info-text info-text" for="cvc">Card number</label>
+                    <input class="info__input-number-three" type="text" id="cvc" placeholder="CVC">
+                  </div>
                 </div>
-                <div class="info__input-third">
-                  <label class="info__info-text info-text" for="cvc">Card number</label>
-                  <input class="info__input-number-three" type="text" id="cvc" placeholder="CVC">
+              </label>
+              <input class="info__radio-input" type="radio" id="allambalo" name="payment">
+              <label class="info__card" for="allambalo">
+                <div class="info__card-inner row row-mrg middle-xs">
+                  <div class="info__info-text info-text">DHL</div>
+                  <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
                 </div>
-              </div>
+                <label class="info__info-text info-text" for="cnumber">Card number</label>
+                <input class="info__input-number-big" type="text" id="cnumber" placeholder="Card number">
+                <div class="info__row row row-mrg add between-xs">
+                  <div class="col">
+                    <label class="info__info-text info-text" for="cholder">Card number</label>
+                    <input class="info__input-number-first" type="text" id="cholder" placeholder="Card holder">
+                  </div>
+                  <div class="info__input-second">
+                    <label class="info__info-text info-text" for="data">Card number</label>
+                    <input class="info__input-number-second" type="text" id="data" placeholder="DD/MM/YY">
+                  </div>
+                  <div class="info__input-third">
+                    <label class="info__info-text info-text" for="cvc">Card number</label>
+                    <input class="info__input-number-three" type="text" id="cvc" placeholder="CVC">
+                  </div>
+                </div>
+              </label>
+              <input class="info__radio-input" type="radio" id="heza" name="payment">
+              <label class="info__card" for="heza">
+                <div class="info__card-inner row row-mrg middle-xs">
+                  <div class="info__info-text info-text">DHL</div>
+                  <img class="info__img" src="media/img/icons/dhl.svg" alt="dhl">
+                </div>
+                <label class="info__info-text info-text" for="cnumber">Card number</label>
+                <input class="info__input-number-big" type="text" id="cnumber" placeholder="Card number">
+                <div class="info__row row row-mrg add between-xs">
+                  <div class="col">
+                    <label class="info__info-text info-text" for="cholder">Card number</label>
+                    <input class="info__input-number-first" type="text" id="cholder" placeholder="Card holder">
+                  </div>
+                  <div class="info__input-second">
+                    <label class="info__info-text info-text" for="data">Card number</label>
+                    <input class="info__input-number-second" type="text" id="data" placeholder="DD/MM/YY">
+                  </div>
+                  <div class="info__input-third">
+                    <label class="info__info-text info-text" for="cvc">Card number</label>
+                    <input class="info__input-number-three" type="text" id="cvc" placeholder="CVC">
+                  </div>
+                </div>
+              </label>
             </div>
             <div class="info__check-box row row-mrg middle-xs">
               <input class="info__radio-input" type="radio" id="fedex">
@@ -347,8 +395,6 @@
             </div>
             <div class="summ__box">
               <div class="summ__row row row-mrg">
-
-
                 <div class="summ__card">
                   <img class="summ__img" src="media/img/img/porduct-1.png" alt="porduct-1" width="100px" height="67">
                   <ul class="summ__list">
@@ -390,6 +436,29 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="summ__row row row-mrg between-xs">
+              <p class="summ__info-text info-text">Subtotal</p>
+              <p class="summ__info-text info-text">73.98 USD</p>
+            </div>
+            <div class="summ__row row row-mrg between-xs">
+              <p class="summ__info-text info-text">Shipping</p>
+              <p class="summ__info-text info-text">Tax</p>
+            </div>
+            <div class="summ__row row row-mrg between-xs">
+              <p class="summ__info-text info-text">17% 16.53 USD</p>
+              <p class="summ__info-text info-text">0 USD</p>
+            </div>
+            <div class="summ__input-inner row row-mrg between-xs">
+              <input class="summ__apply-input" type="text" placeholder="Apply promo code">
+              <button class="summ__apply-btn">Apply now</button>
+            </div>
+            <div class="summ__row row row-mrg between-xs">
+              <div>
+                <p class="summ__info-text info-text">Total Order</p>
+                <p class="summ__green-text green-text">Guaranteed delivery day:  June 12, 2020</p>
+              </div>
+              <p class="summ__ green-price-text green-price-text">89.84 USD</p>
             </div>
           </div>
         </div>

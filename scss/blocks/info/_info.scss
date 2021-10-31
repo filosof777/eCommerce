@@ -70,11 +70,50 @@
     margin-left: auto;
   }
 
+  .info__radio-input{
+
+    &:checked + .info__card{
+      height: 250px;
+    }
+
+    &:checked + .info__card::after {
+      border-color: $color-green;
+    }
+  }
+
   &__card {
+    display: block;
     padding: 16px;
     border: 1px solid #d1d1d1;
     border-radius: 12px;
     margin-bottom: 32px;
+    height: 50px;
+    overflow-y: hidden;
+    transition: height 0.4s ease;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      @include before-after(20px, 20px);
+      @include pozition-absolute;
+      background-color: transparent;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #d1d1d1;
+      top: 25px;
+      left: 20px;
+    }
+
+    &::after {
+      @include before-after(20px, 20px);
+      @include pozition-absolute;
+      border:6px solid transparent;
+      position: absolute;
+      border-radius: 50%;
+      top: 25px;
+      left: 20px;
+
+    }
   }
 
   &__card-inner {
@@ -82,6 +121,7 @@
   }
 
   &__radio-input {
+    display: none;
   }
 
   &__info-text {
@@ -157,15 +197,9 @@
     margin-bottom: 40px;
   }
 
-  &__card {
-  }
-
   &__img {
     margin-bottom: 12px;
     padding-right: 12px;
-  }
-
-  &__list {
   }
 
   &__item {
@@ -195,7 +229,8 @@
     margin-bottom: 8px;
   }
 
-  &__des {
+  &__info-text {
+    margin-bottom: 12px;
   }
 
   &__small-title {
@@ -203,3 +238,26 @@
   }
 }
 
+.summ__input-inner {
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.summ__apply-input {
+  border: none;
+  background-color: transparent;
+}
+
+.summ__apply-btn {
+  border: none;
+  background-color: transparent;
+  @include font-poppins(bold, 15, 22px, $color-151515);
+}
+
+
+.blog1 {
+  padding-top: 40px;
+}
